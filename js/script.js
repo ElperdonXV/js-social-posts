@@ -134,3 +134,9 @@ printPosts(posts, container);
 //2. Gestire l’assenza dell’immagine profilo con un elemento di fallback che contiene le iniziali dell’utente(es.Luca Formicola > LF).
 //3. Al click su un pulsante “Mi Piace” di un post, incrementare il contatore di like al post e cambiare colore al testo del bottone.
 
+const button = document.querySelector('.like-button');
+const likes = document.querySelector('.js-likes-counter');
+button.addEventListener('click', function (event) {
+    event.preventDefault(); //previene il refresh della pagina in un form
+    button.classList.add('like-button--liked');
+});

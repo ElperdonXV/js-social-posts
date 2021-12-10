@@ -8,24 +8,24 @@
 const posts = [
     {
        name: 'Giorgio Bassotti',
-       profile: 'KIPqvvTOC1s',
+        profile: 'https://images.unsplash.com/photo-1606406054219-619c4c2e2100?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80',
        date: '04/22/96',
        txt: 'Sono molto felice di essere stato in questo posto',
-       img: 'I7oLRdM9YIw',
+        img: 'https://images.unsplash.com/photo-1500043357865-c6b8827edf10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     },
     {
         name: 'Helena Ross',
-        profile: 'KIPqvvTOC1s',
+        profile: 'https://images.unsplash.com/photo-1606406054219-619c4c2e2100?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80',
         date: '04/22/21',
         txt: 'Sono molto felice di essere stata in questo posto',
-        img: 'I7oLRdM9YIw',
+        img: 'https://images.unsplash.com/photo-1500043357865-c6b8827edf10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     },
     {
         name: 'Mastro Geppetto',
-        profile: 'KIPqvvTOC1s',
+        profile: 'https://images.unsplash.com/photo-1606406054219-619c4c2e2100?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80',
         date: '04/22/21',
         txt: 'Sono molto felice di essere stato in questo posto',
-        img: 'I7oLRdM9YIw',
+        img: 'https://images.unsplash.com/photo-1500043357865-c6b8827edf10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     },
 ];
 
@@ -38,7 +38,7 @@ function printPosts(array, container) {
             <div class="post__header">
                 <div class="post-meta">                    
                     <div class="post-meta__icon">
-                        <img class="profile-pic" src="https://unsplash.it/300/300?image=${array[i].profile}" alt="${array[i].name}">                    
+                        <img class="profile-pic" src="${array[i].profile}" alt="${array[i].name}">                    
                     </div>
                     <div class="post-meta__data">
                         <div class="post-meta__author">${array[i].name}</div>
@@ -48,7 +48,7 @@ function printPosts(array, container) {
             </div>
             <div class="post__text">${array[i].txt}</div>
             <div class="post__image">
-                <img src="https://unsplash.it/300/300?image=${array[i].img}" alt="">
+                <img src="${array[i].img}" alt="">
             </div>
             <div class="post__footer">
                 <div class="likes js-likes">

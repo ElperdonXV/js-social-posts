@@ -136,7 +136,11 @@ printPosts(posts, container);
 
 const button = document.querySelector('.like-button');
 const likes = document.querySelector('.js-likes-counter');
+let contatore = parseInt(document.querySelector('.js-likes-counter').textContent);
+console.log(contatore);
 button.addEventListener('click', function (event) {
     event.preventDefault(); //previene il refresh della pagina in un form
+    contatore = contatore + 1; 
+    likes.innerHTML = contatore;
     button.classList.add('like-button--liked');
 });
